@@ -25,7 +25,8 @@
 }
 
 #sites{
-	height: 90%;
+	height: 80%;
+	margin-top: 10px;
 	overflow-y: auto;
 }
 
