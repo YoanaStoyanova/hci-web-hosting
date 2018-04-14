@@ -1,0 +1,42 @@
+#content {
+	background-color: #eee;
+	height: 800px;
+	
+}
+
+#site-title{
+	font-size: 3em;
+	margin-left: 1em;
+	display: inline-block;
+	vertical-align: top;
+	font-style: italic;
+}
+
+#sites-menu{
+	height: 100%;
+}
+
+#client-site{
+	color: teal;
+}
+
+#client-site:hover{
+ 	background-color: teal;
+ 	color: #eee;
+}
+
+#user-actions{
+	padding: 1em;
+}
+
+
+
+#website-options a{
+	color: white;
+	text-shadow: 0px 0px 1px black;
+	
+}
+
+#inside-content{
+	margin-top: 1em;
+}

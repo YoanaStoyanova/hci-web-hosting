@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>prototype</title>
+	<meta charset="utf-8">
+	<!-- Compiled and minified CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/css/materialize.min.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="home.css">
+
+    <!-- Compiled and minified JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/js/materialize.min.js"></script>
+</head>
+<body>
+
+
+	<div id="wrapper" class="container">
+		<div id="user-actions" class="row grey lighten-4 z-depth-1">
+
+			<div class="col s12">
+		
+				<a id="homebtn" href="#" class="btn-large"><i style="font-size:50px" class="material-icons">home</i></a>
+				<span id="site-title">Professional web-hosting ツ</span>
+				<a id="prof" href="#" class="btn-large dropdown-trigger right" data-target="profile-dropdown"><i style="font-size:50px" class="material-icons">account_circle</i></a>
+
+				<ul id="profile-dropdown" class="dropdown-content">
+					<li><a href="#">Settings</a></li>
+					<li><a href="#">Tarrifs</a></li>
+					<li><a href="#">Logout</a></li>
+				</ul>
+
+			</div>
+		</div>
+		<div class="divider"></div>		
+		<div id="content" class="row z-depth-1">
+			<div id="sites-menu" class = "col s2 nav-wrapper hide-on-small-only z-depth-1">
+			<ul id="nav-mobile" class="collection ">
+				<li><h5 class="brand-logo center-align teal-text">My Websites</h5></li>
+				<div class="divider"></div>
+				<li><a href="#" id="client-site" class="collection-item waves-effect">Site1.com</a></li>
+				<div class="divider"></div>
+				<li><a href="#"  id="client-site" class="collection-item waves-effect">Site2.com</a></li>
+				<div class="divider"></div>
+				<li><a href="#"  id="client-site" class="collection-item waves-effect">Site3.com</a></li>
+				<div class="divider"></div>
+				<li><a href="#"  id="client-site" class="collection-item waves-effect">Site4.com</a></li>
+				<div class="divider"></div>
+			</ul>
+			</div>
+
+
+				<nav id="website-options" class="col s10 teal">
+					<div class="nav-wrapper " >
+						<ul id="options" class="left hide-on-med-and-down s12">
+							<li class="active"><a href="#">Statistics</a></li>
+							<li><a href="#">Files</a></li>
+							<li><a href="#">Apps</a></li>
+							<li><a href="#">Blacklist</a></li>
+							<li><a href="#">Settings</a></li>
+						</ul>
+					</div>
+
+
+				</nav>
+
+
+			
+
+	
+			</div>
+
+		</div>
+
+
+
+
+	</div>
+
+</body>
+</html>
