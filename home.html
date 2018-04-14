@@ -9,7 +9,19 @@
     <link rel="stylesheet" href="home.css">
 
     <!-- Compiled and minified JavaScript -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/js/materialize.min.js"></script>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/js/materialize.min.js"></script>
+<script>
+
+$(document).ready(function(){
+    $(".dropdown-trigger").dropdown();
+    $('.sidenav').sidenav();
+});
+</script>
+
+
+
 </head>
 <body>
 
@@ -52,13 +64,14 @@
 
 
 				<nav id="website-options" class="col s10 teal">
-					<div class="nav-wrapper " >
-						<ul id="options" class="left hide-on-med-and-down s12">
-							<li class="active"><a href="#">Statistics</a></li>
-							<li><a href="#">Files</a></li>
-							<li><a href="#">Apps</a></li>
-							<li><a href="#">Blacklist</a></li>
-							<li><a href="#">Settings</a></li>
+					<div class="nav-wrapper ">
+						<ul id="options" class="left s12">
+							<li class="active"><a href="/hci-web-hosting/statistics.html">Statistics</a></li>
+							<li><a href="/hci-web-hosting/site-files">Files</a></li>
+							<li><a href="/hci-web-hosting/site-apps">Apps</a></li>
+							<li><a href="/hci-web-hosting/site-blacklist">Blacklist</a></li>
+							<li><a href="/hci-web-hosting/site-settings">Settings</a></li>
+							<a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
 						</ul>
 					</div>
 

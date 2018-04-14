@@ -6,7 +6,6 @@
 
 #nav-mobile{
 	border-radius: 8px;
-	background-color: black;
 }
 
 #site-title{
@@ -47,6 +46,10 @@
 	
 }
 
+#nav-wrapper{
+	min-width: 500px;
+	overflow-x: scroll;
+}
 #inside-content{
 	margin-top: 1em;
 }
