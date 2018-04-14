@@ -1,41 +1,9 @@
-#content{
-	display: table;
-	background-color: black;
-	width: 100%;
+#client-site{
+	color: teal;
+	background-color: #eee;
 }
-#profile_info{
-	background-color: indigo;
+ #client-site:hover{
+ 	background-color: teal;
+ 	 color: #eee;
+ }
 
-}
-
-#sites_list{
-	background-color: red;
-	display: table-cell;
-	width: 25%;
-	
-}
-
-#site_menu{
-	background-color: green;
-	display: table-cell;
-	width: 75%;
-}
-
-#sites_list ul{
-	padding: 0px;
-	text-decoration: none;
-	list-style-type: none;
-	cursor: pointer;
-}
-
-#sites_list li{
-	padding: 8px;
-	background-color: white;
-	border-bottom: 1.2px solid DimGray;
-	color: DimGray;
-}
-
-#sites_list li:hover{
-	background-color: YellowGreen;
-	color: white;
-}
