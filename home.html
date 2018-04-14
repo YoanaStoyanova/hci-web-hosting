@@ -19,16 +19,17 @@ $(document).ready(function(){
     $(".dropdown-trigger").dropdown();
     $('.sidenav').sidenav();
 
-     $("#load_home").on("click", function() {
-        $("#option-content-wrapper").load("/hci-web-hosting/test.html");
-        console.log("asd");
+    $(".nav-wrapper li").on("click", function() {
+    	$(".nav-wrapper li").removeClass("active");
+      	$(this).addClass("active");
     });
+
+
+    $
 });
 
 
 </script>
-
-
 
 </head>
 <body>
@@ -39,9 +40,9 @@ $(document).ready(function(){
 
 			<div class="col s12">
 		
-				<a id="homebtn" href="#" class="btn-large"><i style="font-size:50px" class="material-icons">home</i></a>
+				<a id="homebtn" href="#" class="btn-large"><i style="font-size:30px" class="material-icons">home</i></a>
 				<span id="site-title">Professional web-hosting ツ</span>
-				<a id="prof" href="#" class="btn-large dropdown-trigger right" data-target="profile-dropdown"><i style="font-size:50px" class="material-icons">account_circle</i></a>
+				<a id="prof" href="#" class="btn-large dropdown-trigger right" data-target="profile-dropdown"><i style="font-size:30px" class="material-icons">person</i><i class="material-icons">arrow_drop_down</i></a>
 
 				<ul id="profile-dropdown" class="dropdown-content">
 					<li><a href="#">Settings</a></li>
@@ -55,32 +56,75 @@ $(document).ready(function(){
 		<div id="content" class="row z-depth-1">
 			<div id="sites-menu" class="col l3 nav-wrapper hide-on-med-and-down z-depth-1">
 				<h5 class="brand-logo center-align teal-text">My Websites</h5>
-				<div class="divider"></div>
+				<nav class="white">
+			    	<div class="nav-wrapper valign-wrapper" >
+			      		<form class="z-depth-0">
+			        		<div class="input-field ">
+			          			<input id="search" type="search" placeholder="Search" class="white" style="font-size: 0.8em; text-align: left; padding-left:2.7em;">
+			          			<label class="label-icon" for="search"><i class=" material-icons grey-text text-lighten-3" style="font-size: 15px;">search</i></label>
+			        		</div>
+			      		</form>
+			    	</div>
+			  </nav>
+				
+				
 				<div id="sites">
 					<ul id="nav-mobile" class="rounded-collection collection">
 						<li><a href="#" id="client-site" class="collection-item waves-effect">Site1.com</a></li>
 						<div class="divider"></div>
 						<li><a href="#"  id="client-site" class="collection-item waves-effect">Site2.com</a></li>
 						<div class="divider"></div>
-						<li><a href="#"  id="client-site" class="collection-item waves-effect">Site3.com</a></li>
-						<div class="divider"></div>
+						<li><a href="#" id="client-site" class="collection-item waves-effect">Site1.com</a></li>
+						<div class="divider"></div>	
 						<li><a href="#"  id="client-site" class="collection-item waves-effect">Site4.com</a></li>
+						<div class="divider"></div>
+						<li><a href="#" id="client-site" class="collection-item waves-effect">Site1.com</a></li>
+						<div class="divider"></div>
+						<li><a href="#" id="client-site" class="collection-item waves-effect">Site1.com</a></li>
+						<div class="divider"></div>
+						<li><a href="#"  id="client-site" class="collection-item waves-effect">Site2.com</a></li>
+						<div class="divider"></div>
+						<li><a href="#" id="client-site" class="collection-item waves-effect">Site1.com</a></li>
+						<div class="divider"></div>	
+						<li><a href="#"  id="client-site" class="collection-item waves-effect">Site4.com</a></li>
+						<div class="divider"></div>
+						<li><a href="#" id="client-site" class="collection-item waves-effect">Site1.com</a></li>
+						<div class="divider"></div>
+						<li><a href="#" id="client-site" class="collection-item waves-effect">Site1.com</a></li>
+						<div class="divider"></div>
+						<li><a href="#"  id="client-site" class="collection-item waves-effect">Site2.com</a></li>
+						<div class="divider"></div>
+						<li><a href="#" id="client-site" class="collection-item waves-effect">Site1.com</a></li>
+						<div class="divider"></div>	
+						<li><a href="#"  id="client-site" class="collection-item waves-effect">Site4.com</a></li>
+						<div class="divider"></div>
+						<li><a href="#" id="client-site" class="collection-item waves-effect">Site1.com</a></li>
+						<div class="divider"></div>
+							<li><a href="#" id="client-site" class="collection-item waves-effect">Site1.com</a></li>
+						<div class="divider"></div>
+						<li><a href="#"  id="client-site" class="collection-item waves-effect">Site2.com</a></li>
+						<div class="divider"></div>
+						<li><a href="#" id="client-site" class="collection-item waves-effect">Site1.com</a></li>
+						<div class="divider"></div>	
+						<li><a href="#"  id="client-site" class="collection-item waves-effect">Site4.com</a></li>
+						<div class="divider"></div>
+						<li><a href="#" id="client-site" class="collection-item waves-effect">Site1.com</a></li>
 						<div class="divider"></div>
 					</ul>
 				</div>
 			</div>
 
 
-			<nav id="website-options" class="col s12 m12 l9 teal ">
+			<nav id="website-options" class="col s12 m12 l9 teal">
 				<div class="nav-wrapper ">
-					<a href="#" data-target="mobile-options" class="sidenav-trigger right"><i class="material-icons">menu</i></a>
+					<a href="#" data-target="mobile-options" class="sidenav-trigger hide-on-med-and-up right"><i class="material-icons">menu</i></a>
 					<a href="#" data-target="mobile-sites" class="sidenav-trigger left"><i class="material-icons">wifi</i></a>
 					<ul id="options" class="left s12 l9 hide-on-small-only">
-						<li class="active"><a href="/hci-web-hosting/statistics.html">Statistics</a></li>
-						<li><a href="/hci-web-hosting/site-files">Files</a></li>
-						<li><a href="/hci-web-hosting/site-apps">Apps</a></li>
-						<li><a id="load_home" href="#" >Blacklist</a></li>
-						<li><a href="/hci-web-hosting/site-settings">Settings</a></li>
+						<li class="active"><a href="statistics.html" target="content-frame">Statistics</a></li>
+						<li><a href="site-files">Files</a></li>
+						<li><a href="site-apps">Apps</a></li>
+						<li><a href="test.html" target="content-frame" >Blacklist</a></li>
+						<li><a href="site-settings">Settings</a></li>
 						
 					</ul>
 							
@@ -91,26 +135,23 @@ $(document).ready(function(){
 						<li><a href="#">Site4.com</a></li>
 					</ul>
 					<ul class="sidenav" id="mobile-options">
-						<li><a href="/hci-web-hosting/statistics.html" >Statistics</a></li>
-						<li><a href="/hci-web-hosting/site-files">Files</a></li>
-						<li><a href="/hci-web-hosting/site-apps">Apps</a></li>
-						<li><a href="/hci-web-hosting/test.html" target="option-content-wrapper">Blacklist</a></li>
-						<li><a href="/hci-web-hosting/site-settings">Settings</a></li>
+						<li><a href="statistics.html" >Statistics</a></li>
+						<li><a href="site-files">Files</a></li>
+						<li><a href="site-apps">Apps</a></li>
+						<li><a href="test.html" target="option-content-wrapper">Blacklist</a></li>
+						<li><a href="site-settings">Settings</a></li>
 
 					</ul>
 				</div>
 			</nav>
 	
-			<div id="option-content-wrapper" class="row">
-
+			<div id="option-content-wrapper" class="row" style="height: 100%">
+				<iframe name="content-frame" class="col s9" style="position:relative;height:90%;border:0px"  src=""></iframe>
 
 			</div>
 		</div>
 
 	</div>
-
-
-
 
 	</div>
 
