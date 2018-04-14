@@ -15,9 +15,17 @@
 <script>
 
 $(document).ready(function(){
+
     $(".dropdown-trigger").dropdown();
     $('.sidenav').sidenav();
+
+     $("#load_home").on("click", function() {
+        $("#option-content-wrapper").load("/hci-web-hosting/test.html");
+        console.log("asd");
+    });
 });
+
+
 </script>
 
 
@@ -45,11 +53,11 @@ $(document).ready(function(){
 		</div>
 		<div class="divider"></div>		
 		<div id="content" class="row z-depth-1">
-			<div id="sites-menu" class="col s2 nav-wrapper hide-on-small-only z-depth-1">
+			<div id="sites-menu" class="col l3 nav-wrapper hide-on-med-and-down z-depth-1">
 				<h5 class="brand-logo center-align teal-text">My Websites</h5>
 				<div class="divider"></div>
 				<div id="sites">
-					<ul id="nav-mobile" class="collection ">
+					<ul id="nav-mobile" class="rounded-collection collection">
 						<li><a href="#" id="client-site" class="collection-item waves-effect">Site1.com</a></li>
 						<div class="divider"></div>
 						<li><a href="#"  id="client-site" class="collection-item waves-effect">Site2.com</a></li>
@@ -63,28 +71,43 @@ $(document).ready(function(){
 			</div>
 
 
-				<nav id="website-options" class="col s10 teal">
-					<div class="nav-wrapper ">
-						<ul id="options" class="left s12">
-							<li class="active"><a href="/hci-web-hosting/statistics.html">Statistics</a></li>
-							<li><a href="/hci-web-hosting/site-files">Files</a></li>
-							<li><a href="/hci-web-hosting/site-apps">Apps</a></li>
-							<li><a href="/hci-web-hosting/site-blacklist">Blacklist</a></li>
-							<li><a href="/hci-web-hosting/site-settings">Settings</a></li>
-							<a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
-						</ul>
-					</div>
+			<nav id="website-options" class="col s12 m12 l9 teal ">
+				<div class="nav-wrapper ">
+					<a href="#" data-target="mobile-options" class="sidenav-trigger right"><i class="material-icons">menu</i></a>
+					<a href="#" data-target="mobile-sites" class="sidenav-trigger left"><i class="material-icons">wifi</i></a>
+					<ul id="options" class="left s12 l9 hide-on-small-only">
+						<li class="active"><a href="/hci-web-hosting/statistics.html">Statistics</a></li>
+						<li><a href="/hci-web-hosting/site-files">Files</a></li>
+						<li><a href="/hci-web-hosting/site-apps">Apps</a></li>
+						<li><a id="load_home" href="#" >Blacklist</a></li>
+						<li><a href="/hci-web-hosting/site-settings">Settings</a></li>
+						
+					</ul>
+							
+					<ul id="mobile-sites" class="sidenav">
+						<li><a href="#">Site1.com</a></li>
+						<li><a href="#">Site2.com</a></li>
+						<li><a href="#">Site3.com</a></li>
+						<li><a href="#">Site4.com</a></li>
+					</ul>
+					<ul class="sidenav" id="mobile-options">
+						<li><a href="/hci-web-hosting/statistics.html" >Statistics</a></li>
+						<li><a href="/hci-web-hosting/site-files">Files</a></li>
+						<li><a href="/hci-web-hosting/site-apps">Apps</a></li>
+						<li><a href="/hci-web-hosting/test.html" target="option-content-wrapper">Blacklist</a></li>
+						<li><a href="/hci-web-hosting/site-settings">Settings</a></li>
 
-
-				</nav>
-
-
-			
-
+					</ul>
+				</div>
+			</nav>
 	
-			</div>
+			<div id="option-content-wrapper" class="row">
 
+
+			</div>
 		</div>
+
+	</div>
 
 
 
