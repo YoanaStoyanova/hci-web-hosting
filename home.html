@@ -31,9 +31,9 @@ $(document).ready(function(){
 
 			<div class="col s12">
 		
-				<a id="homebtn" href="#" class="btn-large"><i style="font-size:50px" class="material-icons">home</i></a>
+				<a id="homebtn" href="#" class="btn-large"><i style="font-size:30px" class="material-icons">home</i></a>
 				<span id="site-title">Professional web-hosting ツ</span>
-				<a id="prof" href="#" class="btn-large dropdown-trigger right" data-target="profile-dropdown"><i style="font-size:50px" class="material-icons">account_circle</i></a>
+				<a id="prof" href="#" class="btn-large dropdown-trigger right" data-target="profile-dropdown"><i style="font-size:30px" class="material-icons">person</i><i class="material-icons">arrow_drop_down</i></a>
 
 				<ul id="profile-dropdown" class="dropdown-content">
 					<li><a href="#">Settings</a></li>
@@ -47,7 +47,18 @@ $(document).ready(function(){
 		<div id="content" class="row z-depth-1">
 			<div id="sites-menu" class="col s2 nav-wrapper hide-on-small-only z-depth-1">
 				<h5 class="brand-logo center-align teal-text">My Websites</h5>
-				<div class="divider"></div>
+				<nav class="white">
+			    	<div class="nav-wrapper valign-wrapper" >
+			      		<form class="z-depth-0">
+			        		<div class="input-field ">
+			          			<input id="search" type="search" placeholder="Search" class="white" style="font-size: 0.8em; text-align: left; padding-left:  2.7em;">
+			          			<label class="label-icon" for="search"><i class=" material-icons grey-text text-lighten-3" style="font-size: 15px;">search</i></label>
+			        		</div>
+			      		</form>
+			    	</div>
+			  </nav>
+				
+				
 				<div id="sites">
 					<ul id="nav-mobile" class="collection ">
 						<li><a href="#" id="client-site" class="collection-item waves-effect">Site1.com</a></li>
@@ -66,22 +77,17 @@ $(document).ready(function(){
 				<nav id="website-options" class="col s10 teal">
 					<div class="nav-wrapper ">
 						<ul id="options" class="left s12">
-							<li class="active"><a href="/hci-web-hosting/statistics.html">Statistics</a></li>
-							<li><a href="/hci-web-hosting/site-files">Files</a></li>
-							<li><a href="/hci-web-hosting/site-apps">Apps</a></li>
-							<li><a href="/hci-web-hosting/site-blacklist">Blacklist</a></li>
-							<li><a href="/hci-web-hosting/site-settings">Settings</a></li>
+							<li class="active"><a href="statistics.html" target="content">Statistics</a></li>
+							<li><a href="site-files">Files</a></li>
+							<li><a href="site-apps">Apps</a></li>
+							<li><a href="site-blacklist">Blacklist</a></li>
+							<li><a href="site-settings">Settings</a></li>
 							<a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
 						</ul>
 					</div>
 
-
 				</nav>
-
-
 			
-
-	
 			</div>
 
 		</div>
