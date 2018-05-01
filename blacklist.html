@@ -12,6 +12,33 @@
 
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/js/materialize.min.js"></script>
+<script>
+    $(document).ready(function(){
+
+    $("#blacklist li a").on("click", function(){
+       if(!$(this).is('#add-black-ip')){
+            $(this).parent().parent().remove();
+            console.log("asd");      
+       }
+   
+
+    });
+
+    $("#add-black-ip").on("click", function(){  
+        var $temp = $(this).prev().val();
+        $(this).parent().parent().before(
+            "<li class='collection-item'><div>" +$temp + "<a href'#!' class='secondary-content'><i class='material-icons red-text'>close</i></a></div></li>");
+        $(this).prev().val("");    
+    });
+
+    $(".dropdown-trigger").dropdown();
+    $('.sidenav').sidenav();
+
+
+});
+    
+
+</script>
 </head>
 
 <body>
@@ -24,7 +51,7 @@
         <li class="collection-item"><div>75.23.43.22<a href="#!" class="secondary-content"><i class="material-icons red-text">close</i></a></div></li>
         <li class="collection-item"><div>22.54.223.2<a href="#!" class="secondary-content"><i class="material-icons red-text">close</i></a></div></li>
         <li class="collection-item"><div>16.99.123.144<a href="#!" class="secondary-content"><i class="material-icons red-text">close</i></a></div></li>
-        <li class="collection-item"><div class="input-field"><input type="" name=""><a href="#!" class="secondary-content"><i class="material-icons">local_hospital</i></a></div></li>
+        <li class="collection-item"><div class="input-field"><input type="" name=""><a id="add-black-ip" href="#!" class="secondary-content"><i class="material-icons">local_hospital</i></a></div></li>
  	</ul>
 </div>
 </body>

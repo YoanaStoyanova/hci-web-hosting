@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>prototype</title>
+	<meta charset="utf-8">
+	<!-- Compiled and minified CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/css/materialize.min.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="home.css">
+
+    <!-- Compiled and minified JavaScript -->
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/js/materialize.min.js"></script>
+<script>
+
+$(document).ready(function(){
+
+    $(".dropdown-trigger").dropdown();
+    $('.sidenav').sidenav();
+
+    $(".nav-wrapper li").on("click", function() {
+    	$(".nav-wrapper li").removeClass("active");
+      	$(this).addClass("active");
+    });
+
+
+    $
+});
+</script>
+</head>
+<body>
+
+
+	<div id="wrapper" class="container">
+
+
+		<div id="user-actions" class="row grey lighten-4 z-depth-1">
+
+			<div class="col s12">
+		
+				<a id="homebtn" href="#" class="btn-large"><i style="font-size:30px" class="material-icons">home</i></a>
+				<span id="site-title">Administrator page ツ</span>
+				<a id="prof" href="#" class="btn-large dropdown-trigger right" data-target="profile-dropdown"><i style="font-size:30px" class="material-icons">person</i><i class="material-icons">arrow_drop_down</i></a>
+
+				<ul id="profile-dropdown" class="dropdown-content">
+					<li><a href="#">Settings</a></li>
+					<li><a href="#">Tarrifs</a></li>
+					<li><a href="#">Logout</a></li>
+				</ul>
+
+			</div>
+		</div>
+
+
+			<div class="divider"></div>		
+			<div id="content" class="row z-depth-1">
+				<div id="sites-menu" class="col l3 nav-wrapper hide-on-med-and-down z-depth-1">
+					<h5 class="brand-logo center-align teal-text">Hosting users</h5>
+					<div class="divider"></div>
+					<div id="users">
+						<ul id="nav-mobile" class="collection ">
+							<li><a href="#" id="client-site" class="collection-item waves-effect">Ben Dover</a></li>
+							<div class="divider"></div>
+							<li><a href="#"  id="client-site" class="collection-item waves-effect">Leeroy Jenkins</a></li>
+							<div class="divider"></div>
+							<li><a href="#"  id="client-site" class="collection-item waves-effect">Ben Franklin</a></li>
+							<div class="divider"></div>
+							<li><a href="#"  id="client-site" class="collection-item waves-effect">Dimiter Pistoloff</a></li>
+							<div class="divider"></div>
+						</ul>
+					</div>
+				</div>
+
+
+	
+			<nav id="website-options" class="col s12 m12 l9 teal">
+				<div class="nav-wrapper ">
+					<a href="#" data-target="mobile-options" class="sidenav-trigger hide-on-med-and-up right"><i class="material-icons">menu</i></a>
+					<a href="#" data-target="mobile-users" class="sidenav-trigger left"><i class="material-icons">wifi</i></a>
+					<ul id="options" class="left s12 l9 hide-on-small-only">
+						<li class="active"><a href="#">Websites</a></li>
+						<li><a href="#">Global blacklist</a></li>
+						
+					</ul>
+							
+					<ul id="mobile-users" class="sidenav">
+						<li><a href="#">Ben Dover</a></li>
+						<li><a href="#">Leeroy Jenkins</a></li>
+						<li><a href="#">Ben Franklin</a></li>
+						<li><a href="#">Dimiter Pistoloff</a></li>
+					</ul>
+					<ul class="sidenav" id="mobile-options">
+						<li class="active"><a href="#">Websites</a></li>
+						<li><a href="#">Global blacklist</a></li>
+					</ul>
+				</div>
+			</nav>
+
+
+			
+
+	
+			</div>
+
+		</div>
+
+
+
+
+	</div>
+
+</body>
+</html>
